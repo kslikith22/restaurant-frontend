@@ -26,22 +26,6 @@ const MainContainer = () => {
 
   const [updateOpen ,setUpdateOpen] = useState(false)
 
-  const res = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3R1YXJhbnRzfGVufDB8fDB8fHww",
-      name: "The Gourmet Haven",
-      address: "123 Main Street, Cityville, CA 12345",
-      contact: (
-        <span>
-          <FontAwesomeIcon className="text-blue-500" icon={faPhone} /> Phone -
-          (555) 123-4567,{" "}
-          <FontAwesomeIcon className="text-blue-500" icon={faEnvelope} /> Email
-          - info@gourmethaven.com
-        </span>
-      ),
-    },
-  ];
 
   const [updateData,setUpdateData ] = useState()
   //console.log(updateData)
