@@ -41,11 +41,11 @@ const Carousel = () => {
               className="w-[75%] ml-[25%]  h-[70vh]"
               alt=""
             />
-            <div className="absolute top-20 px-4 h-[70vh] bg-gradient-to-r from-blue-700 via-blue-400 to-cardOverlay  w-[50%] ">
-              <h1 className="text-white mt-20 font-medium text-5xl">
+            <div className="absolute top-20 px-4 h-[70vh] bg-gradient-to-r from-blue-600 rounded-l-xl rounded-r-full via-blue-400 to-cardOverlay  w-[50%] ">
+              <h1 className="text-white mt-28 font-medium text-4xl">
                 {x.heading}
               </h1>
-              <h1 className="text-white mt-16  font-light text-4xl">
+              <h1 className="text-white mt-16  font-light text-2xl">
                 {x.subheading}
               </h1>
             </div>

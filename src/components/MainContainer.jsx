@@ -229,7 +229,7 @@ const MainContainer = () => {
           </div> : ""}
       {resData
         ? resData.map((x) => (
-            <div className="mx-[2%] border flex justify-between px-10 border-blue-400 rounded-lg md:ml-[2%] mt-20 lg:ml-[2%]">
+            <div className="mx-[2%] border flex justify-between px-10 border-gray-400 rounded-lg md:ml-[2%] mt-20 lg:ml-[2%]">
               <div className="flex flex-col py-5 gap-4 ml-5">
                 <h1 className="text-3xl  text-headingColor font-medium">
                   <span className="font-normal text-2xl">{count++}.</span>&nbsp;{x.name}
