@@ -36,7 +36,7 @@ const MainContainer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post(
-      `http://localhost:8080/api/v1/resturants/create`,
+      `https://restuarant-api.onrender.com/api/v1/resturants/create`,
       formData
     );
     console.log(res);
@@ -46,14 +46,14 @@ const MainContainer = () => {
 
   const fetchRes = async () => {
     const res = await axios.get(
-      `http://localhost:8080/api/v1/resturants/allres`
+      `https://restuarant-api.onrender.com/api/v1/resturants/allres`
     );
     setResData(res.data);
   };
 
   const handleDelete = async (id) => {
     const res = await axios.delete(
-      `http://localhost:8080/api/v1/resturants/delete/${id}`
+      `https://restuarant-api.onrender.com/api/v1/resturants/delete/${id}`
     );
    // console.log(res);
     alert("Deleted");
@@ -67,7 +67,7 @@ const MainContainer = () => {
 
   const handleUpdate1 = async(e)=>{
     e.preventDefault()
-    const res  = await axios.put(`http://localhost:8080/api/v1/resturants/update/${updateData.id}`,updateData)
+    const res  = await axios.put(`https://restuarant-api.onrender.com/api/v1/resturants/update/${updateData.id}`,updateData)
    // console.log(res)
     if(res.data[0]  === 1){
       alert("Update Successful")
